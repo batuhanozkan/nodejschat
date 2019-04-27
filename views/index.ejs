@@ -1,0 +1,79 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kahvehane</title>
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Register Login Widget template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login Signup Responsive web template, SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Jura:400,300,500,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Fascinate+Inline" rel="stylesheet">
+<!--//web-fonts-->
+</head>
+<body>
+	<h1 class="banner">Kahvehane </h1>
+	<!-- main -->
+	<div class="main">
+		<!--login-profile-->
+		
+		<!--login-profile-->
+		<!--signin-form-->
+		<div class="w3">
+			<div class="signin-form profile">
+				<h3 class="baslik">Giriş Yap</h3>
+				
+				<div class="login-form">
+					<form action="/" method="post">
+						<input type="text" name="logemail" placeholder="Kullanıcı Adı" required="">
+						<input type="password" name="logpassword" placeholder="Şifre" required="">
+						<div class="tp">
+							<input type="submit" value="GİRİŞ">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="agile">
+			<div class="signin-form signin-form1 profile">
+				<h3 class="baslik">Kayıt Ol</h3>
+				
+				<div class="login-form">
+					<form id="login" action="/" method="post">
+						<input type="text" name="username" placeholder="Kullanıcı Adı" required="">
+						<input type="password" name="password" placeholder="Şifre" id="password" required="" >
+						<input type="submit" value="KAYIT OL">
+					</form>
+				</div>
+			
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--//signin-form-->	
+	</div>
+	
+
+	<script type="text/javascript">
+		var passWordField = document.getElementById('password')
+		var passWordConfirmField = document.getElementById('password_conf')
+		var form = document.getElementById('login')
+		function validateMyForm(){
+			if(passWordField.value != passWordConfirmField.value){ 
+		    	alert("Passwords do not match. Please try again.");
+		  	} else {
+		  		form.submit()
+		  	}
+		}
+	</script>	
+
+</body>
+</html>

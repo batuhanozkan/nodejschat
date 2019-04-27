@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style1.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Quattrocento+Sans|Russo+One" rel="stylesheet">
+    <title>Kahvehane</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="baslik">Kahvehane</h1>
+      
+    </header>
+    <div class="container" style="margin-top:30px">
+      <div class="row">
+          <div class="kullanici">
+        <div class="col-sm-4">
+          
+          <h2>Kullanıcılar</h2>
+          <ul id="kullan">
+            <%
+            var count=0 
+            users.forEach(function(user) { %>  
+              <li id="uyeler<%=count++%>"><%= user.username %></li>
+              
+          <% }); %>
+              
+            </ul>  
+            </div>
+          </div>
+            <div class="col-sm-8 chatekrani">
+   
+  <div id="veri" style="display:none;"><%= users%></div>
+  
+
+
+    
+    <div id="chatroom">
+        <% messages.forEach(function(message) { %>  
+        <div id=container> 	<p class='message'><%= message.receiver %>:<%=message.message %>  </p>  </div>
+        <% }); %>
+      <section id="feedback"></section>
+    </div>
+  
+
+    
+
+    <section id="input_zone"> 
+      <input id="message" class="vertical-align" type="text" />
+      <button id="send_message" class="vertical-align" type="button">Send</button>
+      <button id="send_message1" class="vertical-align" style="display:none" type="button">YOLLA</button>
+      
+    </section>
+  </div>
+</div>
+</div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
